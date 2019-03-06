@@ -1,13 +1,11 @@
 package practicapizzabuilder;
 
 public class Pizza {
-
+    //declaramos atributos
     private float grHarina, mlAgua, grSal, mlAceite, grTomate, grQueso, grPinha;
     private String tipoAceite, tipoQueso;
 
-    public Pizza() {
-    }
-
+    //constructor con parámetros
     public Pizza(final float grHarina, final float mlAgua, float grSal, float mlAceite, float grTomate, float grQueso, float grPinha, String tipoAceite, String tipoQueso) {
         this.grHarina = grHarina;
         this.mlAgua = mlAgua;
@@ -20,6 +18,7 @@ public class Pizza {
         this.tipoQueso = tipoQueso;
     }
 
+    //método toString para mostrar los atributos del objeto
     @Override
     public String toString() {
         return "Pizza{" + "grHarina=" + grHarina + ", mlAgua=" + mlAgua + ", grSal=" + grSal + ", mlAceite=" + mlAceite + ", grTomate=" + grTomate + ", grQueso=" + grQueso + ", grPinha=" + grPinha + ", tipoAceite=" + tipoAceite + ", tipoQueso=" + tipoQueso + '}';

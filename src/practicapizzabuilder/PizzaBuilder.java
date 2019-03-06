@@ -1,18 +1,17 @@
-
 package practicapizzabuilder;
 
 public class PizzaBuilder {
-    private float grHarina, mlAgua, grSal=0, mlAceite=0, grTomate=0, grQueso=0, grPinha=0;
-    private String tipoAceite="", tipoQueso="";
+    //declaramos los mismos atributos que la clase Pizza y los inicializamos
+    private float grHarina, mlAgua, grSal = 0, mlAceite = 0, grTomate = 0, grQueso = 0, grPinha = 0;
+    private String tipoAceite = "", tipoQueso = "";
 
-    public PizzaBuilder() {
-    }
-    
-    public PizzaBuilder(final float grHarina, final float mlAgua){
+    //creamos el constructor con parámetros con los atributos que sean final
+    public PizzaBuilder(final float grHarina, final float mlAgua) {
         this.grHarina = grHarina;
         this.mlAgua = mlAgua;
     }
 
+    //setters del resto de atributos (los que no son final)
     public PizzaBuilder setGrSal(float grSal) {
         this.grSal = grSal;
         return this;
@@ -48,8 +47,9 @@ public class PizzaBuilder {
         return this;
     }
     
-    public Pizza createPizza(){
+    //creamos un metodo que nos devuelva un objeto de tipo Pizza con sus atributos
+    public Pizza createPizza() {
         return new Pizza(grHarina, mlAgua, grSal, mlAceite, grTomate, grQueso, grPinha, tipoAceite, tipoQueso);
     }
-    
+
 }
