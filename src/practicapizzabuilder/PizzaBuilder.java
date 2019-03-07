@@ -2,7 +2,8 @@ package practicapizzabuilder;
 
 public class PizzaBuilder {
     //declaramos los mismos atributos que la clase Pizza y los inicializamos
-    private float grHarina, mlAgua, grSal = 0, mlAceite = 0, grTomate = 0, grQueso = 0, grPinha = 0;
+    private final float grHarina, mlAgua;
+    private float grSal = 0, mlAceite = 0, grTomate = 0, grQueso = 0, grPinha = 0;
     private String tipoAceite = "", tipoQueso = "";
 
     //creamos el constructor con parámetros con los atributos que sean final
